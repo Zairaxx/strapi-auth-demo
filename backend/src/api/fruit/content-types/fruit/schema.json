@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fruits",
+  "info": {
+    "singularName": "fruit",
+    "pluralName": "fruits",
+    "displayName": "fruit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fruitName": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
