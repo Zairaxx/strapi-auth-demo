@@ -2,6 +2,7 @@ let user = document.querySelector("#user")
 let password = document.querySelector("#password");
 
 let getFruits = async () => {
+    // With Fetch
     // let response = await fetch("http://localhost:1337/api/fruits", {
     //     headers: {
     //         'Content-Type': 'application/json',
@@ -10,6 +11,7 @@ let getFruits = async () => {
     //       }
     // })
 
+    //With Axios
     let response = await axios.get("http://localhost:1337/api/fruits",{
         //config
         headers:{
@@ -24,6 +26,8 @@ let getFruits = async () => {
 }
 
 let login = async () => {
+
+    //With Axios
     let response = await axios.post(
         "http://localhost:1337/api/auth/local",
     {
@@ -47,10 +51,10 @@ let login = async () => {
     //       }
     // })
     // let json = await response.json();
-    
     // console.log(json);
-    
     // let token = json.jwt;
+
+
     console.log("Got the JWT!", token);
     sessionStorage.setItem("token", token)
 
