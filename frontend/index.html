@@ -8,13 +8,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <label for="user">Email/Username</label>
-    <input type="text" id="user">
-    <label for="password">Password</label>
-    <input type="password" id="password">
-    <button id="login" onclick="login()">Log in</button>
+    <div>
+        <h2>Login</h2>
+        <label for="user">Email/Username</label>
+        <input type="text" id="user">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button id="login" onclick="login()">Log in</button>
+    </div>
+    <br>    <br>    <br>
+    <div>
+        <h2>Register user</h2>
+        <label for="registerUser">Username:</label>
+        <input type="text" id="registerUser">
+        <label for="registerEmail">E-mail:</label>
+        <input type="email" id="registerEmail">
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword">
+
+        <button id="register" onclick="register()">Register</button>
+    <br>    <br>    <br>
+
+    </div>
     <button onclick="getFruits()">Get fruits</button>
     <div id="fruits-container"></div>
+    <div>
+        <label for="fruitName">Fruit:</label>
+        <input type="text" name="fruitName" id="fruitName">
+        <label for="fruitPrice">Price:</label>
+        <input type="text" name="fruitPrice" id="fruitPrice">
+    </div>
+    <button id="addFruit">Add fruit with POST</button>
+
     <script src="main.js"></script>
 </body>
 </html>

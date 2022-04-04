@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "fruitName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "price": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     }
   }
 }
